@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Sign Language</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Text to Sign Language</h1>
+        <p>Type or speak your text below and have it translated into sign language.</p>
+    </header>
+
+    <div class="container">
+        <!-- Input Section -->
+        <div class="input-section">
+            <h2>Enter Text</h2>
+            <textarea id="text-input" placeholder="Type or Speak..."></textarea>
+            <div class="buttons">
+                <button class="btn" onclick="startSpeechRecognition()">🎤 Speak</button>
+                <button class="btn" onclick="translateToSign()">Translate</button>
+            </div>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-section">
+            <h2>Sign Language Output</h2>
+            <div class="sign-container" id="output-box"></div>
+            <div class="output-buttons">
+                <button class="btn" onclick="retry()">🔄 Retry</button>
+                <button class="btn" onclick="downloadGif()">⬇ Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
